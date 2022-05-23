@@ -6,8 +6,6 @@ const RED = '#E63946';
 
 let x = 100;
 let y = 100;
-let angle = 0.0;
-let seg_length = 50;
 
 function setup() {
   createCanvas(800, 800);
@@ -35,5 +33,4 @@ function draw() {
   }
 
   ellipse(x, y, 20, 20);
-
 }
