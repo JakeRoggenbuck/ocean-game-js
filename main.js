@@ -14,23 +14,23 @@ function setup() {
 }
 
 function draw() {
-  background(DARK_BLUE);
+  background("blue");
 
-  if (keyIsDown(LEFT_ARROW)) {
+  if (keyIsDown(LEFT_ARROW) && x > 0) {
     x -= 5;
   }
 
-  if (keyIsDown(RIGHT_ARROW)) {
+  if (keyIsDown(RIGHT_ARROW) && x < 800) {
     x += 5;
   }
 
-  if (keyIsDown(UP_ARROW)) {
+	if (keyIsDown(UP_ARROW) && y > 0) {
     y -= 5;
   }
 
-  if (keyIsDown(DOWN_ARROW)) {
+  if (keyIsDown(DOWN_ARROW) && y < 800) {
     y += 5;
   }
 
-  ellipse(x, y, 20, 20);
+  ellipse(x, y, 100, 100);
 }
